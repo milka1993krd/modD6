@@ -1,0 +1,23 @@
+
+{% extends 'layout/base.html' %}
+{% load custom_filters %}
+{% block title %}
+Post
+{% endblock title %}
+
+{% block content %}
+<hr>
+                <td>
+                    {{ post.dateCreation|date:'D M Y' }}
+                </td>
+
+                <td>
+                    {{ post.title}}
+                </td>
+                <td>
+                    {{ post.text }}
+                </td>
+
+            </tr>
+
+{% endblock content %}
